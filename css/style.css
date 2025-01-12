@@ -1,0 +1,304 @@
+/*TIPOGRAFIA*/
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&display=swap');
+/* --colorPrincipal: #ae66ff; */
+/*colores*/
+:root{
+    --colorPrincipal: 174, 102, 255;
+    --negro: 0, 0, 0;
+    --blanco: 255, 255, 255;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none;
+    outline: none !important;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    font-size: 1rem;
+    /*krub-semibold*/
+    font-family: "Krub", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border: 2px solid red;
+}
+
+img{
+    max-width: 100%;
+}
+a, li{
+    text-decoration: none;
+}
+a{
+    text-transform: uppercase;
+    font-family: "Oswald", serif;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+h2{
+    text-transform: uppercase;
+    /* font-family: "Oswald", serif; */
+}
+
+
+/*HEADER*/
+header.container, footer.container{
+    grid-template-columns: repeat(3, 1fr);
+}
+.marca{
+    text-align: left;
+}
+.marca a{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: .5em;
+    line-height: 1;
+    color: rgb(var(--negro));
+}
+.marca a i{
+    font-size: 1.5em;
+}
+
+/*navegador*/
+.navegador, nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.navegador{
+    flex-grow: row nowrap;
+}
+nav ul{
+    /* display: flex; */
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* gap: 2em; */
+}
+.navegador nav ul li a{
+    color: #000000;
+    font-family: "Oswald", serif;
+    font-weight: 600;
+    /* padding: 5px; */
+    border: 2px solid inherit;
+}
+.navegador nav ul li a:hover{
+    color: rgb(var(--colorPrincipal));
+    border-bottom: 2px solid rgb(var(--colorPrincipal));
+}
+
+
+/*MENU HAMBURGUESA*/
+.navegador label{
+    font-size: 1.5em;
+    cursor: pointer;
+    display: initial;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    z-index: 3;
+}
+
+#menu-hamburguesa, .menu-icono, .menu-icono-cancelar{
+    display: none;
+    color: rgb(var(--negro));
+}
+
+.menu-icono:active, .menu-icono-cancelar:active{
+    color: rgb(var(--colorPrincipal));
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(var(--colorPrincipal));
+}
+
+
+/*USUARIO*/
+.usuario{
+    display: flex;
+    justify-content:flex-end;
+    justify-content: center;
+    gap: 1.5em;
+}
+.usuario a{
+    color: rgb(var(--negro));
+    padding: .5em 1em;
+}
+.usuario a i{
+    font-size: 1.5em;
+    cursor: pointer;
+    display: initial;
+}
+.usuario a:nth-child(1){
+    display: none;
+}
+.usuario a:not(:first-child){
+    color: rgb(var(--negro));
+    padding: .5em 1em;
+    border: 2px solid rgb(var(--negro));
+}
+.usuario a:not(:first-child):hover{
+    color: rgb(var(--colorPrincipal));
+    border: 2px solid rgb(var(--colorPrincipal));
+    transition: .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+.contenido-imagen{
+    position: relative;
+    width: 500px;  /* Ajusta el tamaño según sea necesario */
+    height: 500px; /* Ajusta el tamaño según sea necesario */
+}
+
+.image-inicio, .imagen-base{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+}
+
+.imagen-ui{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    mix-blend-mode: screen; /* Aplica el efecto de mezcla tipo "screen" */
+    filter: brightness(1.5) contrast(1.5); /* Efecto de brillo y contraste similar a la "luz fuerte" */
+    opacity: .6; /*agregado*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    .container, footer.container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    header.container{
+        grid-template-columns: .5fr 1fr .5fr;
+        padding: 2em 0;
+    }
+
+    .usuario{
+        grid-area: 1;
+        justify-content:flex-start;
+    } 
+    .marca{
+        text-align: center;
+    }
+
+    .marca a i, h1{
+        font-size: 1em;
+    }
+
+    .navegador{
+        position: relative;
+    }
+    .navegador nav{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        right: 0;
+        z-index: 2;
+        background-color: rgb(var(--blanco));
+        padding: 2em;
+        height: 100vh;
+        display: none;
+    }
+    .navegador nav::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100vw;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+    }
+    .navegador, nav ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:flex-end;
+        gap: 2em;
+    }
+    nav ul{
+        padding-top: 4em;
+    }
+    /* .navegador nav ul li a{
+        color: #fff;
+        font-weight: 700;
+    } */
+    /* .navegador nav ul li a:hover{
+        color: #fff !important;
+        border: 2px solid #fff !important;
+    } */
+
+    /*MENU HAMBURGUESA*/
+    .menu-icono{
+        display: initial;
+    }
+    #menu-hamburguesa:checked ~ nav{
+        display: initial;
+
+    }
+    #menu-hamburguesa:checked + label .menu-icono{
+        display: none;
+        transform: rotate(90deg);
+    }
+    #menu-hamburguesa:checked + label .menu-icono-cancelar{
+        display: initial;
+        transform: rotate(90deg);
+        /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(344deg) brightness(109%) contrast(101%); */
+    }
+
+
+    /*USUARIO*/
+    .usuario a:nth-child(1){
+        display: initial;
+    }
+    .usuario a:not(:first-child){
+        display: none;
+    }
+}

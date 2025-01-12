@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI.Cuenta</title>
+    <link rel="icon" type="icono" href="img/favicon.jpg">
+    <!--Exportar Bootstrap iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Exportar css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="container">
+        <div class="marca">
+            <i class="bi bi-square-fill"></i>
+            <h1>Your logo</h1>
+        </div>
+
+        <!--Navegador-->
+        <div class="navegador">
+            <!--Menu hamburguesa-->
+            <input type="checkbox" id="menu-hamburguesa">
+            <label for="menu-hamburguesa">
+                <i class="bi bi-list menu-icono"></i>
+                <i class="bi bi-x-lg menu-icono-x"></i>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contactar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="usuario">
+            <!-- <input type="button" id="menu-usuario">
+            <label for="menu-usuario">
+                <i class="bi bi-person-circle"></i>
+            </label> -->
+
+            <a href="usuario.html"><i class="usuario-icono bi bi-person-circle"></i></a>
+
+            <a href="usuario.html" class="boton iniciar-sesion">Iniciar sesión</a>
+            <a href="usuario.html" class="boton crear-cuenta">Crear cuenta</a>
+        </div>
+    </header>
+    
+    <!--main-->
+    <main class="container">
+        <div class="contenido-imagen">
+            <img class="imagen-ui" src="img/ui-normal.png" alt="imagen-inicio">
+            <img class="imagen-inicio" src="img/Place Your Image Here-7.png" alt="imagen-inicio">
+        </div>
+
+        <div class="contenido-acceder">
+            <button class="boton" type="button" id="iniciar-sesion">Iniciar sesión</button>
+            <button class="button" id="crear-cuenta">Crear cuenta</button>
+        </div>
+        <div class="contenido-iniciar-sesion">
+            <h2 class="titulo">Iniciar</h2>
+            <h2>Sesión</h2>
+            <form action="" class="formulario">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input class="form-control" type="email" id="email" placeholder="Correo electrónico*" autocomplete="off">
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                </div>
+                <div>
+                    <label for="contrasenia">Contraseña:</label>
+                    <input class="form-control" type="password" id="contrasenia" placeholder="Contraseña*" minlength="8" >
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                </div>
+
+                <!--Botón de enviar-->
+                <button class="boton-enviar" type="submit" id="botonEnviar">Ingresar</button>
+            </form>
+        </div>
+
+        <div class="contenido-suscribir">
+            <h2 class="titulo">Suscríbete</h2>
+            <h2>Inicia esta nueva aventura</h2>
+            <form action="" class="formulario">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input class="form-control" type="email" id="email" placeholder="Correo electrónico*" autocomplete="off">
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                </div>
+                <div>
+                    <label for="contrasenia">Contraseña:</label>
+                    <input class="form-control" type="password" id="contrasenia" placeholder="Contraseña*" minlength="8" >
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                </div>
+                <div>
+                    <label for="contrasenia">Repita contraseña:</label>
+                    <input class="form-control" type="password" id="contrasenia" placeholder="Contraseña*" minlength="8" >
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                </div>
+
+                <!--Botón de enviar-->
+                <button class="boton-enviar" type="submit" id="botonEnviar">Crear cuenta</button>
+            </form>
+            <span class="mensaje-enviado" id="mensaje-enviado">¡Mensaje enviado exitosamente!</span>
+        </div>
+        <div class="mensaje-exitoso">
+            <h2 class="titulo">¡Felicidades!</h2>
+            <p>Su cuenta se ha creado exitosamente. Revise cu correo electrónico.</p>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="container">
+        <div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contacto.html">Contactar</a></li>
+                <li>Términos y condiciones</li>
+                <li>Política de privacidad</li>
+            </ul>
+        </div>
+        <form action="" class="suscribete">
+            <label for="suscribir">Suscríbete para recibir nuestro boletín</label>
+            <input type="text" id="suscribir">
+            <button>Suscribete</button>
+        </form>
+        <div>
+            <ul class="redes-sociales">
+                <li><a class="icono" href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="icono" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="icono" href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a class="icono" href="https://www.tiktok.com/es/" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+            </ul>
+
+            <div class="copyright">
+                <span>Company ©Copyright </span>
+                <span id="fecha"></span>
+                <span>. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
