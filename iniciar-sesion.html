@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI.Contactanos</title>
+    <title>UI.Cuenta</title>
     <link rel="icon" type="icono" href="img/favicon.jpg">
     <!--Exportar Bootstrap iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -52,31 +52,32 @@
     <main class="container">
         <div class="contenido-imagen">
             <img class="imagen-ui" src="img/ui-normal.png" alt="imagen-inicio">
-            <img class="imagen-inicio" src="img/Place Your Image Here.png" alt="imagen-inicio">
+            <img class="imagen-inicio" src="img/Place Your Image Here-8.png" alt="imagen-inicio">
         </div>
-        <div>
-            <h2>Contáctanos</h2>
-            <h3>Habla con un integrante de nuestro equipo.</h3>
+
+        <div class="contenido-iniciar-sesion">
+            <h2 class="titulo">Iniciar</h2>
+            <h2>Sesión</h2>
+
+            <div class="redireccionar">
+                <p>Aun no tengo cuenta, <a href="registrar.html" class="boton crear-cuenta">Registrarse</a></p>
+            </div>
+
             <form action="" class="formulario">
                 <div>
-                    <input class="form-control" type="text" id="nombre-apellido" placeholder="Nombre y Apellido*">
-                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
-                </div>
-                <div>
+                    <label for="email">Correo electrónico:</label>
                     <input class="form-control" type="email" id="email" placeholder="Correo electrónico*" autocomplete="off">
                     <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
                 </div>
                 <div>
-                    <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Escriba su mensaje*" row></textarea>
+                    <label for="contrasenia">Contraseña:</label>
+                    <input class="form-control" type="password" id="contrasenia" placeholder="Contraseña*" minlength="8" >
                     <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
-                    
                 </div>
 
-            <!--Botón de enviar-->
-            <button class="boton-enviar" type="submit" id="botonEnviar">Enviar</button>
-        </form>
-        <span class="mensaje-enviado" id="mensaje-enviado">¡Mensaje enviado exitosamente!</span>
-
+                <!--Botón de enviar-->
+                <button class="boton-enviar" type="submit" id="botonEnviar">Ingresar</button>
+            </form>
         </div>
     </main>
 

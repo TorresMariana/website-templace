@@ -1,0 +1,288 @@
+/*MAIN*/
+main.container{
+    padding: 0 2em;
+    overflow: hidden;
+}
+
+main .contenido-texto{
+    text-align: justify;
+    height: 100%;
+}
+/* .contenido-texto > *{
+    margin-bottom: 1em;
+} */
+/* .contenido-texto > *:last-child{
+    margin-bottom: 0;
+} */
+main .contenido-texto h2{
+    font-size: 8em;
+}
+main .contenido-texto h2 span{
+    font-size: .3em;
+    font-weight: 400;
+}
+main .contenido-texto h3{
+    text-transform: uppercase;
+}
+.contenido-texto p{
+    line-height: 1.5;
+    margin: 2em 0;
+    /*se encargará de dividirla correctamente para que no se desborde.*/
+    /* word-wrap: break-word; */
+}
+.contenido-texto .boton{
+    margin-right: 1em;
+    margin-bottom: 2.5em;
+}
+.h3-contorno{
+    border-top: 2px solid rgb(var(--negro));
+    display: inline-block;
+    padding-top: 2em;
+}
+
+
+.contenido-imagen .frase{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    /* border: 2px solid red; */
+}
+
+.imagen-ui{
+    left: 5%;
+    overflow: visible;
+    height: 103%;
+}
+
+.imagen-inicio{
+   width: 90%;
+}
+
+
+
+/*ASIDE*/
+aside.container{
+    padding: 0;
+    gap: 0;
+}
+.comunidad, .registrar{
+    grid-column: span 2;
+    padding: 0 2em;
+    gap: 2em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.comunidad{
+    color: rgb(var(--blanco));
+    background-color: rgb(var(--negro));
+    padding: 2em;
+
+}
+.comunidad h3{
+    font-weight: 300;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+.comunidad h3 span{
+    font-weight: 600;
+}
+.edicion{
+    letter-spacing: .3em;
+    word-spacing: .3em;
+    text-transform: uppercase;
+    padding: 1em;
+    border: 2px solid rgb(var(--blanco));
+
+    justify-self: center;
+    width: fit-content; /* Ajusta el tamaño del contenedor al contenido */
+
+}
+.edicion #fecha{
+    font-size: 2em;
+}
+
+.registrar{
+    color: rgb(var(--blanco));
+    background-color: rgb(var(--colorPrincipal));
+    overflow: hidden;
+    height: 50vh;
+}
+.registrar div{
+    padding: 2em;
+}
+.registrar div h2:nth-child(2){
+    font-weight: 300;
+}
+.registrar div a{
+    margin: 1em;
+    color: rgb(var(--blanco));
+    background-color: rgb(var(--negro));
+    border: 2px solid rgb(var(--negro));
+}
+.registrar div a:hover{
+    border: 2px solid rgb(var(--blanco));
+}
+
+.registrar img{
+    object-fit: cover;
+    vertical-align: top;
+    align-self: start;
+    overflow: hidden;
+}
+
+
+/*TESTIMONIOS*/
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tarjeta-imagen{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(var(--negro));
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tarjeta-imagen img{
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: top;
+}
+.tarjeta-texto{
+    text-align: start;
+    display: grid;
+    grid-template-areas: 
+            'comillas-1 .'
+            'h3 h4'
+            'p p'
+            '. comillas-2'
+            'estrellas .';
+    gap: .5em;
+}
+.comilla-1{
+    grid-area: comillas-1;
+}
+.tarjeta-texto h3{
+    grid-area: h3;
+}
+.tarjeta-texto h4{
+    grid-area: h4;
+}
+.tarjeta-texto p{
+    grid-area: p;
+}
+.comilla-2{
+    grid-area: comillas-2;
+    text-align: end;
+}
+.estrellas{
+    grid-area: estrellas;
+    color: #a0a0a0;
+}
+
+.tarjeta-texto  h3, .tarjeta-texto h4{
+    text-transform: uppercase;
+}
+.tarjeta-texto h4{
+    font-family: "Oswald", serif;
+    color: #a0a0a0;
+}
+
+.comilla-2{
+    display: inline-flex;
+    text-align: right;
+    transform: scale(-1, -1);
+}
+.tarjeta-texto .bi-quote{
+    font-size: 2em;
+}
+.estrellas > i:not(:last-child){
+    color: rgb(var(--colorPrincipal));
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    main .contenido-texto h2{
+        font-size: 4em;
+    }
+    main .contenido-texto h2 span{
+        font-size: normal;
+    }
+    main .contenido-texto h3{
+        /* text-align: left; */
+    }
+    main .contenido-texto{
+        text-align: center;
+    }
+    .h3-contorno{
+        border-top: none;
+    }
+    .imagen-ui{
+        display: none;
+    }
+    .contenido-imagen{
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-imagen .frase{
+        position: static;
+        top: 0;
+        right: 0;
+        margin-top: 2em;
+    }
+
+
+
+    /*ASIDE*/
+    .comunidad, .registrar{
+        grid-template-columns: 1fr;
+    }
+    .comunidad{
+        width: 100%;
+    }
+    .comunidad h3{
+        font-size: 1em;
+    }
+    .edicion p, .edicion #fecha{
+        font-size: .8em;
+    }
+    .registrar{
+        position: relative;
+        padding: 0;
+    }
+    .registrar div{
+        position: absolute;
+        top: 50;
+        left: 0;
+        right: 0;
+        padding: 2em;
+    }
+
+    /*TESTIMONIOS*/
+    section .frase{
+        justify-self: center;
+    }
+    .tarjeta{
+        flex-direction: column;
+    }
+    .tarjeta-imagen{
+        width: 50%;
+        height: 50%;
+
+    }
+}

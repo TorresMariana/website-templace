@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--Exportar css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!--header-->
@@ -39,17 +40,12 @@
                 </ul>
             </nav>
         </div>
-        
+
         <div class="usuario">
-            <!-- <input type="button" id="menu-usuario">
-            <label for="menu-usuario">
-                <i class="bi bi-person-circle"></i>
-            </label> -->
+            <a href="iniciar-sesion.html"><i class="usuario-icono bi bi-person-circle"></i></a>
 
-            <a href="usuario.html"><i class="usuario-icono bi bi-person-circle"></i></a>
-
-            <a href="usuario.html" class="boton iniciar-sesion">Iniciar sesión</a>
-            <a href="usuario.html" class="boton crear-cuenta">Crear cuenta</a>
+            <a href="iniciar-sesion.html" class="iniciar-sesion">Iniciar sesión</a>
+            <a href="registrar.html" class="crear-cuenta">Crear cuenta</a>
         </div>
     </header>
 
@@ -57,26 +53,28 @@
     <main class="container">
         <div class="contenido-texto">
             <h2>UI. <span>beginner's</span></h2>
-            <h3>Guía de inicio para diseñadores principiantes</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis modi molestiae omnis dolor quas corrupti atque. Ab reprehenderit omnis nemo, accusantium architecto iste, nesciunt dolore molestiae officia quam dignissimos cumque <i class="bi bi-square-fill"></i> ■ ⬛</p>
+            <h3><span class="h3-contorno">Guía de inicio</span> para diseñadores principiantes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis modi molestiae omnis dolor quas corrupti atque. Ab reprehenderit omnis nemo, accusantium architecto iste, nesciunt dolore molestiae officia quam dignissimos cumque ■</p>
             
             <a href="cursos.html" class="boton boton-empezar">Empecemos</a>
             <a href="nosotros.html" class="boton boton-leer-mas">Leer más</a>
         </div>
+        
         <div class="contenido-imagen">
             <div class="frase">
-                <i class="bi bi-square-fill"></i>
-                <p>Become a pro-designer</p>
+                <i class="bi bi-square-fill" style="grid-area: i;"></i>
+                <p style="grid-area: p1;">Become a </p>
+                <p style="grid-area: p2;">pro-designer</p>
             </div>
-            <img class="imagen-ui" src="img/ui-normal.png" alt="imagen-inicio">
+            <img class="imagen-ui" src="img/u.png" alt="imagen-inicio">
             <img class="imagen-inicio" src="img/Place Your Image Here.png" alt="imagen-inicio">
         </div>
     </main>
 
     <!--section-->
-    <section class="container">
+    <aside class="container">
         <div class="comunidad">
-            <h3>Únete a la <span>comunidad</span> <i class="bi bi-square-fill"></i></h3>
+            <h3>Únete a la <span>comunidad</span> ■</h3>
             
             <div class="edicion">
                 <p>Edición</p>
@@ -87,12 +85,12 @@
         <div class="registrar">
             <div>
                 <h2>Regístrate ahora</h2>
-                <h2>y obtén un descuento <i class="bi bi-square-fill"></i></h2>
-                <a href="usuario.html" class="boton boton-empezar">Registrate</a>
+                <h2>y obtén un descuento ■</h2>
+                <a href="registrar.html" class="boton boton-empezar">Registrate</a>
             </div>
             <img src="img/Place Your Image Here-6.png" alt="">
         </div>
-    </section>
+    </aside>
 
     <!--testimonios-->
     <section class="container testimonios">
@@ -101,84 +99,84 @@
             <h4>users think.</h4>
         </div>
         <div class="frase">
-            <i class="bi bi-square-fill"></i>
-            <p>Become a pro-designer</p>
+            <i class="bi bi-square-fill" style="grid-area: i;"></i>
+            <p style="grid-area: p1;">Become a </p>
+            <p style="grid-area: p2;">pro-designer</p>
         </div>
-        <div class="testimonios-contenedor">
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="img/foto-1.png" alt="imagen-tarjeta">
-                </div>
-                <div class="tarjeta-texto">
-                    <i class="bi bi-quote"></i>
-                    <h3>Laura Smith</h3>
-                    <span>Hace 2 días</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
-                    <i class="bi bi-quote"></i>
-                    <div class="estrellas">
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
+
+        <div class="tarjeta">
+            <div class="tarjeta-imagen">
+                <img src="img/foto-1.png" alt="imagen-tarjeta">
+            </div>
+            <div class="tarjeta-texto">
+                <i class="bi bi-quote comilla-1"></i>
+                <h3>Laura Smith</h3>
+                <h4>Hace 2 días</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
+                <i class="bi bi-quote comilla-2"></i>
+                <div class="estrellas">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                 </div>
             </div>
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="img/foto-2.png" alt="imagen-tarjeta">
-                </div>
-                <div class="tarjeta-texto">
-                    <i class="bi bi-quote"></i>
-                    <h3>Josh Jason</h3>
-                    <span>Hace 7 días</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
-                    <i class="bi bi-quote"></i>
-                    <div class="estrellas">
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
+        </div>
+        <div class="tarjeta">
+            <div class="tarjeta-imagen">
+                <img src="img/foto-2.png" alt="imagen-tarjeta">
+            </div>
+            <div class="tarjeta-texto">
+                <i class="bi bi-quote comilla-1"></i>
+                <h3>Josh Jason</h3>
+                <h4>Hace 7 días</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
+                <i class="bi bi-quote comilla-2"></i>
+                <div class="estrellas">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                 </div>
             </div>
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="img/foto-3.png" alt="imagen-tarjeta">
-                </div>
-                <div class="tarjeta-texto">
-                    <i class="bi bi-quote"></i>
-                    <h3>Peter Simon</h3>
-                    <span>Hace 14 días</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
-                    <i class="bi bi-quote"></i>
-                    <div class="estrellas">
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
+        </div>
+        <div class="tarjeta">
+            <div class="tarjeta-imagen">
+                <img src="img/foto-3.png" alt="imagen-tarjeta">
+            </div>
+            <div class="tarjeta-texto">
+                <i class="bi bi-quote comilla-1"></i>
+                <h3>Peter Simon</h3>
+                <h4>Hace 14 días</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
+                <i class="bi bi-quote comilla-2"></i>
+                <div class="estrellas">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                 </div>
             </div>
-            <div class="tarjeta">
-                <div class="tarjeta-imagen">
-                    <img src="img/foto-4.png" alt="imagen-tarjeta">
-                </div>
-                <div class="tarjeta-texto">
-                    <i class="bi bi-quote"></i>
-                    <h3>Sarah Sheffield</h3>
-                    <span>Hace 17 días</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
-                    <i class="bi bi-quote"></i>
-                    <div class="estrellas">
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
+        </div>
+        <div class="tarjeta">
+            <div class="tarjeta-imagen">
+                <img src="img/foto-4.png" alt="imagen-tarjeta">
+            </div>
+            <div class="tarjeta-texto">
+                <i class="bi bi-quote comilla-1"></i>
+                <h3>Sarah Sheffield</h3>
+                <h4>Hace 17 días</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum laboriosam sunt vero quas, deserunt, doloribus ducimus quasi animi voluptatum laudantium nam ullam perferendis aliquid.</p>
+                <i class="bi bi-quote comilla-2"></i>
+                <div class="estrellas">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                 </div>
             </div>
         </div>
@@ -198,8 +196,8 @@
         </div>
         <form action="" class="suscribete">
             <label for="suscribir">Suscríbete para recibir nuestro boletín</label>
-            <input type="text" id="suscribir">
-            <button>Suscribete</button>
+            <input type="email" id="suscribir">
+            <button id="boton-enviar">Suscribete</button>
         </form>
         <div>
             <ul class="redes-sociales">
@@ -210,8 +208,8 @@
             </ul>
 
             <div class="copyright">
-                <span>Company ©Copyright </span>
-                <span id="fecha"></span>
+                <span>©Copyright </span>
+                <span id="fecha">2025</span>
                 <span>. All rights reserved.</span>
             </div>
         </div>
