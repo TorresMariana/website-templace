@@ -45,7 +45,6 @@ main .contenido-texto h3{
     position: absolute;
     top: 30%;
     right: 0;
-    /* border: 2px solid red; */
 }
 
 .imagen-ui{
@@ -271,6 +270,9 @@ aside.container{
         left: 0;
         right: 0;
         padding: 2em;
+    }
+    .registrar div h2:nth-child(2){
+        font-size: .8em;
     }
 
     /*TESTIMONIOS*/
