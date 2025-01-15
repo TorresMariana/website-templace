@@ -112,8 +112,10 @@ section .frase{
 
 .section-imagen .fecha{
     display: flex;
+    /* grid-template-columns: auto auto; */
     /* justify-self: end; */
-    justify-content: end;
+    /* border: 2px solid green; */
+    justify-content: flex-end;
     align-items: center;
     gap: 1em;
     margin: 2em 0;
@@ -179,6 +181,9 @@ section .frase{
     } */
     .section-texto ul{
         grid-template-columns: 1fr;
+    }
+    .section-texto{
+        padding: 2em;
     }
 
 
