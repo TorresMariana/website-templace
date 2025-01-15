@@ -112,7 +112,8 @@ section .frase{
 
 .section-imagen .fecha{
     display: flex;
-    justify-self: end;
+    /* justify-self: end; */
+    justify-content: end;
     align-items: center;
     gap: 1em;
     margin: 2em 0;
