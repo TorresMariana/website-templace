@@ -1,0 +1,175 @@
+main.container{
+    grid-template-columns: repeat(4, 1fr);
+}
+main{
+    /* position: relative; */
+    background-image: url('../img/fondo.png');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+}
+/* main img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+} */
+.titulo-propuesta{
+    grid-column: span 4;
+    font-size: 2em;
+    margin: 1em 0;
+    width: 100%;
+    color: rgb(var(--blanco));
+    background-color: rgb(var(--colorPrincipal));
+}
+.titulo-propuesta, .curso h4, .curso-boton, .section-texto span{
+    font-family: "Oswald", serif;
+    text-transform: uppercase;
+}
+.curso{
+    background-color: #f0f0f0;
+    border: 2px solid rgb(var(--blanco));
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    width: 75%;
+    padding: 2em;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    justify-self: center;
+    width: 100%;
+}
+.curso-titulo{
+    font-size: 2em;
+}
+.curso-titulo span{
+    font-weight: 400;
+}
+.curso h4{
+    justify-self: center;
+    /* Ajusta el tamaño del contenedor al contenido */
+    /* width: fit-content;  */
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: .5em 2em;
+    margin: 1em 0;
+}
+.curso-boton{
+    background-color: transparent;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+.curso:hover{
+    background-color: rgb(var(--blanco));
+    border: 2px solid rgb(var(--colorPrincipal));
+}
+.curso:hover .boton{
+    color: rgb(var(--blanco));
+    background-color: rgb(var(--colorPrincipal));
+    border: 2px solid rgb(var(--colorPrincipal));
+}
+
+
+section{
+    position: relative;
+}
+section .frase{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    transform: rotate(-90deg) translateX(25%);
+    justify-self: center;
+}
+.section-texto{
+    text-align: left;
+}
+.section-texto > *{
+    margin-bottom: 2em;
+}
+.section-texto ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    text-transform: uppercase;
+}
+.section-texto ul li i{
+    margin-right: 1em;
+}
+.section-texto span{
+    display: inline-flex;
+    color: rgb(var(--negro));
+    padding: .5em 1em;
+    background-color: rgb(var(--colorPrincipal));
+}
+
+.section-imagen .fecha{
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    gap: 1em;
+    margin: 2em 0;
+}
+.linea{
+    width: 100px;
+    height: 5px;
+    background-color: rgb(var(--negro));
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    main.container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .frase{
+        justify-self: center;
+    }
+    .titulo-propuesta{
+        grid-column: span 2;
+    }
+
+    .curso{
+        background-color: rgb(var(--blanco));
+        border: 2px solid rgb(var(--colorPrincipal));
+    }
+    .curso-boton{
+        color: rgb(var(--blanco));
+        background-color: rgb(var(--colorPrincipal));
+        border: 2px solid rgb(var(--colorPrincipal));
+    }
+    .curso-titulo{
+        font-size: 1.5em;
+    }
+    .curso-descripcion{
+        font-size: .8em;
+    }
+
+
+    /* section, section .frase{
+        position: static;
+    }
+    section .frase{
+        order: 3; 
+        transform: rotate(0) translateX(0);
+    } */
+    section .frase{
+        text-wrap: nowrap;
+        right: 100%;
+    }
+    .section-texto ul{
+        grid-template-columns: 1fr;
+    }
+
+
+
+}

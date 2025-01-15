@@ -48,13 +48,8 @@ section.portada{
     align-items: center;
     height: 100%;
 }
-.imagen-inicio{
-    /* filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px); */
-}
 .imagen-ui{
     top: 25%;
-    /* vertical-align: bottom;
-    object-position: bottom; */
 }
 .contenido-texto{
     text-transform: uppercase;
@@ -62,10 +57,6 @@ section.portada{
     justify-content: center;
     white-space: nowrap;
 }
-
-
-
-
 
 main div{
     padding: 4em;
