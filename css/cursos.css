@@ -1,12 +1,16 @@
 main.container{
     grid-template-columns: repeat(4, 1fr);
 }
-main{
+main .frase{
     /* position: relative; */
-    background-image: url('../img/fondo.png');
+    /* background-image: url('../img/fondo.png');
     background-repeat: repeat;
     background-size: contain;
-    background-position: top;
+    background-position: top; */
+    grid-column: 3/5;
+}
+main .titulo{
+    grid-column: 1/3;
 }
 /* main img{
     position: absolute;
@@ -131,9 +135,15 @@ section .frase{
     main.container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .frase{
+    main .frase{
         justify-self: center;
     }
+    main .titulo{
+        grid-column: 1/2;
+    }
+    main .frase{
+        grid-column: 2/3;
+    } 
     .titulo-propuesta{
         grid-column: span 2;
     }
