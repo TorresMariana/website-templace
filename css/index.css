@@ -8,9 +8,6 @@ main .contenido-texto{
     text-align: justify;
     height: 100%;
 }
-/* .contenido-texto > *{
-    margin-bottom: 1em;
-} */
 /* .contenido-texto > *:last-child{
     margin-bottom: 0;
 } */
@@ -220,9 +217,6 @@ aside.container{
     }
     main .contenido-texto h2 span{
         font-size: normal;
-    }
-    main .contenido-texto h3{
-        /* text-align: left; */
     }
     main .contenido-texto{
         text-align: center;

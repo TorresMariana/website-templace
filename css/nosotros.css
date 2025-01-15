@@ -1,0 +1,175 @@
+aside.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    align-items: end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    z-index: -1;
+    padding: 0;
+    padding-bottom: 2em;
+}
+
+aside p{
+    text-transform: uppercase;
+    align-items:center;
+    justify-content: center;
+    white-space: nowrap;
+    transform: rotate(-90deg) translateX(25%);
+}
+aside p i{
+    margin-right: 1em;
+}
+/* .contenido-texto:nth-of-type(1) p*/ 
+/* aside p:first-of-type{
+    left: -2%;
+    padding-bottom: .5em;
+} */
+/* .contenido-texto:nth-of-type(2) p */
+/* aside p:last-of-type{
+    right: -2%;
+    padding-top: .5em;
+} */
+
+
+
+section.portada{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: .5fr 1fr .5fr;
+    height: 90vh;
+    
+}
+.portada .contenido-imagen{
+    align-items: center;
+    height: 100%;
+}
+.imagen-inicio{
+    /* filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px); */
+}
+.imagen-ui{
+    top: 25%;
+    /* vertical-align: bottom;
+    object-position: bottom; */
+}
+.contenido-texto{
+    text-transform: uppercase;
+    align-items:center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+
+
+
+main div{
+    padding: 4em;
+}
+main .texto{
+    text-align: justify;
+}
+.texto h2{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+.texto span, .profesion{
+    display: inline-flex;
+    margin-top: 2em;
+    padding: .5em 1em;
+    font-family: "Oswald", serif;
+    text-transform: uppercase;
+    background-color: rgb(var(--colorPrincipal));
+}
+
+
+section .titulo{
+    grid-column: span 2;
+}
+.tarjeta, .tarjeta-imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2em; */
+    /* padding: 2em; */
+}
+.tarjeta-imagen{
+    width: 75%;
+    height: 75%;
+    color: rgb(var(--colorPrincipal));
+}
+.tarjeta-imagen img{
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: top;
+    width: 75%;
+    height: 75%;
+    border: 2px solid rgb(var(--colorPrincipal));
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cirulo-1{
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+.cirulo-2{
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+.profesion{
+    color: rgb(var(--blanco));
+    /* background-color: rgb(var(--negro)); */
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    aside p{
+        position: absolute;
+    }
+    aside p:first-of-type{
+        display: none;
+    }
+    aside p:last-of-type{
+        right: -12%;
+    }
+
+    section.portada{
+        grid-template-columns: 1fr;
+    }
+    aside.container{
+        align-items: center;
+        padding: 0;
+    }
+
+    main div{
+        padding: 2em;
+    }
+    .texto h2{
+        font-size: 2em;
+    }
+    .que-ahcemos{
+        order: 4;
+    }
+
+    section .titulo{
+        grid-column: 1;
+    }
+
+    .tarjeta{
+        margin-bottom: 2em;
+    }
+}
+
