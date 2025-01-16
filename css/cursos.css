@@ -94,12 +94,18 @@ section .frase{
     background-color: rgb(var(--colorPrincipal));
 }
 
+.section-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
 .section-imagen .fecha{
     display: flex;
     /* grid-template-columns: auto auto; */
-    /* justify-self: end; */
+    justify-self: end;
     /* border: 2px solid green; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
     gap: 1em;
     margin: 2em 0;
@@ -122,17 +128,21 @@ section .frase{
     main.container{
         grid-template-columns: repeat(2, 1fr);
     }
-    main .frase{
+    /* main .frase{
         justify-self: center;
-    }
-    /* main .titulo{
+    } */
+    main .titulo{
         grid-column: 1/2;
     }
     main .frase{
         grid-column: 2/3;
-    }  */
-    main .titulo, main .frase, .titulo-propuesta{
+    } 
+    .titulo-propuesta{
         grid-column: span 2;
+    }
+
+    main .frase i, main .frase p{
+        font-size: .8em;
     }
 
     .curso{
