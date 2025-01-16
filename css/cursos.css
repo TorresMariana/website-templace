@@ -176,9 +176,9 @@ section .frase{
     .section-texto ul{
         grid-template-columns: 1fr;
     }
-    .section-texto{
+    /* .section-texto{
         padding: 2em;
-    }
+    } */
 
 
 
