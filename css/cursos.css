@@ -28,6 +28,7 @@ main .titulo{
     padding: 2em;
     justify-self: center;
     width: 100%;
+    box-sizing: content-box;
 }
 .curso-titulo{
     font-size: 2em;
@@ -128,20 +129,20 @@ section .frase{
     main.container{
         grid-template-columns: repeat(2, 1fr);
     }
-    /* main .frase{
+    main .frase{
         justify-self: center;
-    } */
+    }
     main .titulo{
         grid-column: 1/2;
     }
     main .frase{
         grid-column: 2/3;
     } 
-    .titulo-propuesta{
+    main .titulo, main .frase, .titulo-propuesta{
         grid-column: span 2;
     }
 
-    main .frase i, main .frase p{
+    .frase i, .frase p{
         font-size: .8em;
     }
 
@@ -176,9 +177,9 @@ section .frase{
     .section-texto ul{
         grid-template-columns: 1fr;
     }
-    /* .section-texto{
+    .section-texto{
         padding: 2em;
-    } */
+    }
 
 
 
