@@ -162,9 +162,9 @@ section .frase{
     }
 
 
-    section, section .frase{
+    /* section, section .frase{
         position: static;
-    }
+    } */
     section .frase{
         order: 3; 
         transform: rotate(0) translateX(0);
@@ -176,9 +176,9 @@ section .frase{
     .section-texto ul{
         grid-template-columns: 1fr;
     }
-    .section-texto{
-        padding: 0;
-    }
+    /* .section-texto{
+        padding: 2em;
+    } */
 
 
 
