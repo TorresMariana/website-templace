@@ -28,7 +28,6 @@ main .titulo{
     padding: 2em;
     justify-self: center;
     width: 100%;
-    box-sizing: content-box;
 }
 .curso-titulo{
     font-size: 2em;
@@ -95,12 +94,12 @@ section .frase{
     background-color: rgb(var(--colorPrincipal));
 }
 
-.section-imagen{
+/* .section-imagen{
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-}
+} */
 .section-imagen .fecha{
     display: flex;
     /* grid-template-columns: auto auto; */
