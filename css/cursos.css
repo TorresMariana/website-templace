@@ -137,7 +137,7 @@ section .frase{
     main .frase{
         grid-column: 2/3;
     } 
-    main .titulo, main .frase, .titulo-propuesta{
+    .titulo-propuesta{
         grid-column: span 2;
     }
 
@@ -177,7 +177,7 @@ section .frase{
         grid-template-columns: 1fr;
     }
     .section-texto{
-        padding: 2em;
+        padding: 0;
     }
 
 
