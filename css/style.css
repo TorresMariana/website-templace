@@ -23,7 +23,7 @@ body{
 
     font-size: 1rem;
     /*krub-semibold*/
-    font-family: "Krub", serif;
+    font-family: "Krub", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
@@ -46,7 +46,7 @@ a, li{
 }
 a, button{
     text-transform: uppercase;
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
 }
 
 h1{
@@ -55,7 +55,7 @@ h1{
 }
 h2{
     text-transform: uppercase;
-    /* font-family: "Oswald", serif; */
+    /* font-family: "Oswald", sans-serif; */
 }
 
 
@@ -99,7 +99,7 @@ nav ul{
 }
 .navegador nav ul li a{
     color: #000000;
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 600;
     border: 2px solid inherit;
 }
@@ -278,7 +278,7 @@ footer a:hover{
 }
 
 footer > div:nth-child(1) ul{
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: start;

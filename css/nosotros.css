@@ -72,7 +72,7 @@ main .texto{
     display: inline-flex;
     margin-top: 2em;
     padding: .5em 1em;
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     background-color: rgb(var(--colorPrincipal));
 }

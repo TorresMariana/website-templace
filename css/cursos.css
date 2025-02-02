@@ -16,7 +16,7 @@ main .titulo{
     background-color: rgb(var(--colorPrincipal));
 }
 .titulo-propuesta, .curso h4, .curso-boton, .section-texto span{
-    font-family: "Oswald", serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
 }
 .curso{
@@ -162,9 +162,9 @@ section .frase{
     }
 
 
-    /* section, section .frase{
+    section, section .frase{
         position: static;
-    } */
+    }
     section .frase{
         order: 3; 
         transform: rotate(0) translateX(0);
