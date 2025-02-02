@@ -90,12 +90,8 @@ header.container, footer.container{
     flex-grow: row nowrap;
 }
 nav ul{
-    /* display: flex; */
     flex-wrap: nowrap;
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* gap: 2em; */
 }
 .navegador nav ul li a{
     color: #000000;
@@ -177,8 +173,6 @@ nav ul{
     transition: .5s ease;
 }
 
-
-
 /*FRASE*/
 .frase{
     display: grid;
@@ -190,39 +184,22 @@ nav ul{
     justify-self: end;
     text-align: left;
 }
-/* .frase > *{
-    margin: 0;
-} */
 .frase i{
     margin-right: 1em;
 }
 
 
-
-
-
-
-
-
 .contenido-imagen{
     position: relative;
     height: 100%;
-    /* overflow: hidden; */
     display: inline-flex;
 }
-
 .imagen-inicio, .imagen-base{
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0;
-    left: 0;
-    right: 0; */
     object-fit: contain;
     vertical-align: bottom;
     object-position: bottom;
     overflow: visible;
 }
-
 .imagen-ui{
     position: absolute;
     top: 0;
@@ -230,7 +207,7 @@ nav ul{
     object-fit: cover;
     mix-blend-mode: screen; /* Aplica el efecto de mezcla tipo "screen" */
     filter: brightness(1.5) contrast(1.5); /* Efecto de brillo y contraste similar a la "luz fuerte" */
-    opacity: .6; /*agregado*/
+    opacity: .6;
     /* vertical-align: top;
     object-position: center; */
 }
@@ -239,7 +216,7 @@ nav ul{
 /*TITULO*/
 .titulo{
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     align-items: baseline;
     justify-content: left;
     white-space: nowrap;
@@ -368,14 +345,6 @@ footer form button:hover{
     nav ul{
         padding-top: 4em;
     }
-    /* .navegador nav ul li a{
-        color: #fff;
-        font-weight: 700;
-    } */
-    /* .navegador nav ul li a:hover{
-        color: #fff !important;
-        border: 2px solid #fff !important;
-    } */
 
     /*MENU HAMBURGUESA*/
     .menu-icono{

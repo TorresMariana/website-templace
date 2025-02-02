@@ -51,7 +51,7 @@
     
     <!--main-->
     <main class="container">
-        <div class="contenido-imagen">
+        <div class="contenido-imagen" id="contenido-imagen">
             <img class="imagen-ui" src="img/ui-normal.png" alt="imagen-inicio">
             <img class="imagen-inicio" src="img/Place Your Image Here-7.png" alt="imagen-inicio">
         </div>
@@ -62,7 +62,7 @@
         </div> -->
         
 
-        <div class="contenido-sesion">
+        <div class="contenido-sesion" id="contenido-sesion">
             <h2 class="titulo">Suscríbete</h2>
             <h2 class="titulo titulo2">Inicia una nueva aventura</h2>
 
@@ -70,30 +70,29 @@
                 <p>Ya tengo tengo cuenta, <a href="iniciar-sesion.html" class="iniciar-sesion">Iniciar sesión</a></p>
             </div>
             
-            <form action="" class="formulario">
+            <form action="" class="formulario" id="formulario-registrar">
                 <div>
                     <label for="email">Correo electrónico:</label>
                     <input class="form-control" type="email" id="email" placeholder="Correo electrónico*" autocomplete="off">
-                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                    <span class="warning" id="mensaje-error-email-registro">El campo es obligatorio*</span>
                 </div>
                 <div>
                     <label for="contrasenia">Contraseña:</label>
-                    <input class="form-control" type="password" id="contrasenia" placeholder="Contraseña*" minlength="8" >
-                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                    <input class="form-control" type="password" id="contrasenia-nueva" placeholder="Contraseña*" minlength="8" >
+                    <span class="warning" id="mensaje-error-contrasenia-1">El campo es obligatorio*</span>
                 </div>
                 <div>
                     <label for="contrasenia">Repita contraseña:</label>
-                    <input class="form-control" type="password" id="contrasenia" placeholder="Contraseña*" minlength="8" >
-                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
+                    <input class="form-control" type="password" id="contrasenia-verificar" placeholder="Contraseña*" >
+                    <span class="warning" id="mensaje-error-contrasenia-2">El campo es obligatorio*</span>
                 </div>
 
                 <!--Botón de enviar-->
                 <button class="boton-enviar" type="submit" id="botonEnviar">Crear cuenta</button>
             </form>
-            <span class="mensaje-enviado" id="mensaje-enviado">¡Mensaje enviado exitosamente!</span>
         </div>
-        
-        <div class="mensaje-exitoso">
+
+        <div class="mensaje-exitoso" id="registro-exitoso">
             <h2 class="titulo">¡Felicidades!</h2>
             <p>Su cuenta se ha creado exitosamente. Revise cu correo electrónico.</p>
         </div>
